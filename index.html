@@ -76,7 +76,6 @@
         progressBarEmpty.style.display = "";
         progressBarFull.style.width = `${100 * progress}%`;
       }).then((unityInstance) => {
-        done(unityInstance);
         unityI = unityInstance;
         loadingCover.style.display = "none";
         if (canFullscreen) {
@@ -88,7 +87,6 @@
           };
         }
       }).catch((message) => {
-        abort(message);
         alert(message);
       });
     };
