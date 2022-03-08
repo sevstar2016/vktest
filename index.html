@@ -97,9 +97,11 @@
 
     <script>
 
-      vkBridge.send('VKWebAppInit').then(_info =>{
-        console.log(_info);
-      });
+      function init(){
+        vkBridge.send('VKWebAppInit').then(_info =>{
+          console.log(_info);
+        });
+      }
 
       function auth(){
         vkBridge.send('VKWebAppGetUserInfo').then(_info =>{
