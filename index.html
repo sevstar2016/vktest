@@ -8,23 +8,6 @@
   <title>VkTest</title>
   <link rel="shortcut icon" href="TemplateData/favicon.ico">
   <link rel="stylesheet" href="TemplateData/style.css">
-
-  <script>
-    var _unityAwaiter = {};
-    _unityAwaiter.ready = new Promise((resolve, reject) => {
-      _unityAwaiter.done = resolve;
-      _unityAwaiter.abort = reject;
-    });
-    window.onGSInit = async (gs) => {
-      await _unityAwaiter.ready;
-      window.GameScore = new GameScoreUnity(gs, unityI);
-    };
-  </script>
-
-  <!-- >>> replace with your gamescore load script here <<< -->
-  <script async src="https://gs.eponesh.com/sdk/game-score.js?projectId=584&publicToken=HMFe4fTXa9f8-qCazavVBbi8nLmWGNB8&callback=onGSInit"></script>
-  <!-- <script async src="https://gs.eponesh.com/sdk/game-score.js?projectId=4&publicToken=xT3RpsJMXpKWHPrTWkv3VBeHJKvCBccT&callback=onGSInit"></script> -->
-  <!-- >>> replace with your gamescore load script here <<< -->
 </head>
 
 <body class="dark">
