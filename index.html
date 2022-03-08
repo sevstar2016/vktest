@@ -101,7 +101,7 @@
 
 
 
-      function Auth(){
+      function auth(){
         vkBridge.send('VKWebAppGetUserInfo').then(_info =>{
           console.log(_info);
           unityI.SendMessage('VKSDK', 'AuthenticateSuccess', JSON.stringify(_info));
